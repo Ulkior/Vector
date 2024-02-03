@@ -1,0 +1,106 @@
+{% extends 'base.html' %}
+{% load static %}
+
+<div id="root">
+    {% block main %}
+        <div class="container-fluid page-header py-1">
+            <div class="container text-center py-1">
+                <h1 class="text-white animated slideInDown">
+                    Связаться с нами
+                </h1>
+                <nav aria-label="breadcrumb animated slideInDown">
+                    <ol class="breadcrumb justify-content-center mb-0">
+                        <li class="breadcrumb-item"><a href="{% url 'index' %}">Главный</a></li>
+                        <li class="breadcrumb-item"><a href="#">Страницы</a></li>
+                        <li class="breadcrumb-item" aria-current="page">Контакты</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Contact Start -->
+        <div class="container-fluid py-0 mt-0">
+            <div class="container py-3">
+                <div class="contact-detail position-relative p-5">
+                    <div class="row g-5 mb-5 justify-content-center">
+                        <div class="col-xl-4 col-lg-6 wow fadeIn" data-wow-delay=".3s"
+                             style="visibility: visible; animation-delay: 0.3s; animation-name: fadeIn;">
+                            <div class="d-flex bg-light p-3 rounded contact__location">
+                                <div class="flex-shrink-0 btn-square bg-secondary rounded-circle"
+                                     style="width: 64px; height: 64px">
+                                    <i class="fas fa-map-marker-alt text-white"></i>
+                                </div>
+                                <div class="ms-3">
+                                    <h4 class="text-primary">Адрес</h4>
+                                    <a href="https://goo.gl/maps/Zd4BCynmTb98ivUJ6" target="_blank" class="h5">Ул.
+                                        Махтумкули, 119 Ташкент/Узбекистан</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 wow fadeIn" data-wow-delay=".5s"
+                             style="visibility: visible; animation-delay: 0.5s; animation-name: fadeIn;">
+                            <div class="d-flex bg-light p-3 rounded contact__location">
+                                <div class="flex-shrink-0 btn-square bg-secondary rounded-circle"
+                                     style="width: 64px; height: 64px">
+                                    <i class="fa fa-phone text-white"></i>
+                                </div>
+                                <div class="ms-3">
+                                    <h4 class="text-primary">Позвоните нам</h4>
+                                    <a class="h5" href="tel:+998935557774" target="_blank">+998 93 555-77-74</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 wow fadeIn" data-wow-delay=".7s"
+                             style="visibility: visible; animation-delay: 0.7s; animation-name: fadeIn;">
+                            <div class="d-flex bg-light p-3 rounded contact__location">
+                                <div class="flex-shrink-0 btn-square bg-secondary rounded-circle"
+                                     style="width: 64px; height: 64px">
+                                    <i class="fa fa-envelope text-white"></i>
+                                </div>
+                                <div class="ms-3">
+                                    <h4 class="text-primary">
+                                        Почта
+                                    </h4>
+                                    <a href="mailto:m...@gmail.com?Subject=Hello" target="_blank" class="h5">info@vectorengineering.uz</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row g-5 contact-details">
+                        <div class="col-lg-6 wow fadeIn" data-wow-delay=".3s"
+                             style="visibility: visible; animation-delay: 0.3s; animation-name: fadeIn;">
+                            <div class="p-5 h-100 rounded contact-map">
+                                <iframe class="rounded w-100 h-100" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d187.32125074538894!2d69.33374759215111!3d41.305817638423534!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b0cc379e9c3%3A0xbfd285c95176a376!2zODg0TSs4Rk0sINCi0L5zaGtlbnQsINCj0LfQsdC10LrQuNGB0YLQsNC9!5e0!3m2!1sru!2sus!4v1699766480846!5m2!1sru!2sus
+                  style=" border:=""
+                                "="" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 wow fadeIn" data-wow-delay=".5s">
+                            <div class="p-5 rounded contact-form">
+                                <form method="post" action="{% url 'form' %}">
+                                    {% csrf_token %}
+                                    <div class="mb-4">
+                                        <input type="text" name="name" class="form-control border-0 py-3" placeholder="Ваше имя">
+                                    </div>
+                                    <div class="mb-4">
+                                        <input type="email" name="email" class="form-control border-0 py-3" placeholder="Ваш e-mail">
+                                    </div>
+                                    <div class="mb-4">
+                                        <input type="text" name="phone" class="form-control border-0 py-3" placeholder="Номер телефона">
+                                    </div>
+                                    <div class="mb-4">
+                                        <textarea name="message" class="w-100 form-control border-0 py-3" rows="6" cols="10" placeholder="Напишите нам текст вашего обращения"></textarea>
+                                    </div>
+                                    <div class="text-start">
+                                        <button class="btn bg-primary text-white py-3 px-5" type="submit">Отправить</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endblock main %}
+</div>

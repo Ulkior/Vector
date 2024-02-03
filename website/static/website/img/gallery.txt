@@ -1,0 +1,42 @@
+<img src="C:\Users\User\Desktop\Vector-main\img\compnies\ABB.png" alt="Image">
+<img src="C:\Users\User\Desktop\Vector-main\img\compnies\AEG.png" alt="Image">
+<img src="C:\Users\User\Desktop\Vector-main\img\compnies\allen-bradley-vector-logo.png" alt="Image">
+<img src="C:\Users\User\Desktop\Vector-main\img\compnies\Baumuller_Logo.png" alt="Image">
+<img src="C:\Users\User\Desktop\Vector-main\img\compnies\Beckhoff.png" alt="Image">
+<img src="C:\Users\User\Desktop\Vector-main\img\compnies\big dutchman.png" alt="Image">
+<img src="C:\Users\User\Desktop\Vector-main\img\compnies\Bonfiglioli.png" alt="Image">
+<img src="C:\Users\User\Desktop\Vector-main\img\compnies\Cumark1.png" alt="Image">
+<img src="C:\Users\User\Desktop\Vector-main\img\compnies\Danfoss.png" alt="Image">
+<img src="C:\Users\User\Desktop\Vector-main\img\compnies\Delta.png" alt="Image">
+<img src="C:\Users\User\Desktop\Vector-main\img\compnies\eliarkurumsal.png" alt="Image">
+<img src="C:\Users\User\Desktop\Vector-main\img\compnies\Emerson.png" alt="Image">
+<img src="C:\Users\User\Desktop\Vector-main\img\compnies\FANUC-logo.png" alt="Image">
+<img src="C:\Users\User\Desktop\Vector-main\img\compnies\Fuji electric.png" alt="Image">
+<img src="C:\Users\User\Desktop\Vector-main\img\compnies\GMT.png" alt="Image">
+<img src="C:\Users\User\Desktop\Vector-main\img\compnies\Hitachi-Logo.png" alt="Image">
+<img src="C:\Users\User\Desktop\Vector-main\img\compnies\invt.png" alt="Image">
+<img src="C:\Users\User\Desktop\Vector-main\img\compnies\KEB-Logo.svg.png" alt="Image">
+<img src="C:\Users\User\Desktop\Vector-main\img\compnies\Lenze.png" alt="Image">
+<img src="C:\Users\User\Desktop\Vector-main\img\compnies\logo-picanol-ev.png" alt="Image">
+<img src="C:\Users\User\Desktop\Vector-main\img\compnies\logo_control_techniques.png" alt="Image">
+<img src="C:\Users\User\Desktop\Vector-main\img\compnies\Logo_Uster.svg.png" alt="Image">
+<img src="C:\Users\User\Desktop\Vector-main\img\compnies\LS.png" alt="Image">
+<img src="C:\Users\User\Desktop\Vector-main\img\compnies\Marzoli1.png" alt="Image">
+<img src="C:\Users\User\Desktop\Vector-main\img\compnies\Mitsubishi.png" alt="Image">
+<img src="C:\Users\User\Desktop\Vector-main\img\compnies\Nidec.png" alt="Image">
+<img src="C:\Users\User\Desktop\Vector-main\img\compnies\Omron.png" alt="Image">
+<img src="C:\Users\User\Desktop\Vector-main\img\compnies\panasonic-vector-logo.png" alt="Image">
+<img src="C:\Users\User\Desktop\Vector-main\img\compnies\Parker.png" alt="Image">
+<img src="C:\Users\User\Desktop\Vector-main\img\compnies\Rieter1.png" alt="Image">
+<img src="C:\Users\User\Desktop\Vector-main\img\compnies\Rockwell.png" alt="Image">
+<img src="C:\Users\User\Desktop\Vector-main\img\compnies\Savio.png" alt="Image">
+<img src="C:\Users\User\Desktop\Vector-main\img\compnies\Schlafhorst.png" alt="Image">
+<img src="C:\Users\User\Desktop\Vector-main\img\compnies\Schneider.png" alt="Image">
+<img src="C:\Users\User\Desktop\Vector-main\img\compnies\SEW_LOGO.svg.png" alt="Image">
+<img src="C:\Users\User\Desktop\Vector-main\img\compnies\Siemens.png" alt="Image">
+<img src="C:\Users\User\Desktop\Vector-main\img\compnies\Tde Macno.png" alt="Image">
+<img src="C:\Users\User\Desktop\Vector-main\img\compnies\Teco.png" alt="Image">
+<img src="C:\Users\User\Desktop\Vector-main\img\compnies\Toshiba.png" alt="Image">
+<img src="C:\Users\User\Desktop\Vector-main\img\compnies\Trutzschler_Logo.svg.png" alt="Image">
+<img src="C:\Users\User\Desktop\Vector-main\img\compnies\Vacon.png" alt="Image">
+<img src="C:\Users\User\Desktop\Vector-main\img\compnies\Yaskawa1.png" alt="Image">

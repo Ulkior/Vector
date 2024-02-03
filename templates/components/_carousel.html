@@ -1,0 +1,83 @@
+{% load static %}
+
+<div class="carusel-index container-fluid px-0">
+    <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true"
+                aria-label="First slide"></li>
+            <li data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Second slide"></li>
+            <li data-bs-target="#carouselId" data-bs-slide-to="2" aria-label="Third slide"></li>
+            <li data-bs-target="#carouselId" data-bs-slide-to="3" aria-label="Fourth slide"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active video">
+                <video autoplay loop muted playsinline>
+                    <source src="{% static 'website/img/MainPoster/Poster_vidos.mp4' %}" type="video/mp4">
+                    <!-- Добавьте дополнительные исходные файлы видео для кросс-браузерной поддержки -->
+                    Your browser does not support the video tag.
+                </video>
+                <div class="carousel-caption">
+                    <div class="container carousel-content">
+                        <h6 class="text-secondary h4 animated fadeInUp">Vector engineering</h6>
+                        <h1 class="text-white display-1 mb-4 animated fadeInLeft">Стратегии автоматизации — ваш путь к
+                            эффективности производства!</h1>
+                        <p class="mb-4 text-white fs-5 animated fadeInDown">Компания VEKTOR MUHANDISLIK
+                            специализирующейся на индустриальной автоматизации.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item product">
+                <div class="carousel-caption">
+                    <div class="container carousel-content text-left">
+                        <div class="container">
+                            <img src="{% static 'website/img/MainPoster/poster-product.png' %}" alt="">
+                        </div>
+                        <div class="container">
+                            <h6 class="text-secondary h4 animated fadeInUp">CUMARK</h6>
+                            <p class="mb-4 text-white fs-5 animated fadeInDown">
+                                Cumark —— Наша компания является официальным дистрибьютором CUMARK (Китай) в
+                                Узбекистане. Вы можете купить всю продукцию марки CUMARK в нашем магазине.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item product ps">
+                <div class="carousel-caption">
+                    <div class="container carousel-content">
+                        <div class="container">
+                            <img src="{% static 'website/img/MainPoster/Product%231.png' %}" alt="">
+                        </div>
+                        <div class="container">
+                            <h6 class="text-secondary h4 animated fadeInUp">GMT</h6>
+                            <p class="mb-4 text-white fs-5 animated fadeInDown">
+                                GMT —- Серводрайверы серии GSS — востребованный продукт на рынке промышленной
+                                автоматизации, предназначенный для использования вместе с эфиркат-серводвигателями и
+                                драйверами.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item remont-plat">
+                <div class="carousel-caption">
+                    <div class="container carousel-content">
+                        <h1 class="text-white display-1 mb-4 animated fadeInLeft">Ремонт плат</h1>
+                        <p class="mb-4 text-white fs-5 animated fadeInDown">
+                            Ремонт плат — процесс восстановления электронных печатных плат, включающий замену
+                            компонентов, пайку и обнаружение неисправностей.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>

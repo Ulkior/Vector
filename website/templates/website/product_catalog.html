@@ -1,0 +1,178 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+
+
+    <!-------------------------------------------Здесь начинается Block content ----------------------------------->
+    {% block main %}
+    <!-- Модальное окно продукта -->
+    <div class="modal modal-flex" id="productModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-xl " role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productModalTitle">Название продукта</h5>
+                    <button type="button" class="close animated fadeIn" data-dismiss="modal" aria-label="Close"
+                            onclick="closeProductModal()">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <!-- Фотогалерея с использованием Owl Carousel и анимаций Animate.css -->
+                    <div class="inner-block owl-carousel owl-theme" id="productCarousel">
+                        <div class="item animated fadeIn"><img src="{% static 'website/img/project-3.jpg' %}"
+                                                               alt="Image 1"></div>
+                        <div class="item animated fadeIn"><img src="{% static 'website/img/project-2.jpg' %}"
+                                                               alt="Image 2"></div>
+                        <div class="item animated fadeIn"><img src="{% static 'website/img/project-1.jpg' %}"
+                                                               alt="Image 3"></div>
+                        <!-- Добавьте другие изображения по мере необходимости -->
+                    </div>
+                    <div class="inner-block description">
+                        <!-- Подробное описание продукта с анимацией -->
+                        <h5 class="text-primary">Краткое описание</h5>
+                        <p class="animated fadeIn" id="productDescription">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto atque cupiditate
+                            dolorum id nulla placeat quasi quibusdam rerum similique veniam.
+                        </p>
+
+
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <a href="" id="documentationLink" type="button" class="btn btn-secondary">Документация <i
+                                    class="fa-solid fa-file"></i></a>
+                    <button type="button" class="btn btn-danger" onclick="closeProductModal()">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="searchbar-nav nav-catalog navbar-wrapper container-fluid bg-primary">
+        <div class="container">
+            <form class="seatchbar py-3 input-group d-flex" method="get" action="{% url 'search_results' %}">
+                <input  id="seatchbar" name="q" type="text" class="form-control"  aria-label="Пример размера поля ввода"
+                       aria-describedby="inputGroup-sizing-default" placeholder="Напишите что вы ищете ...">
+                <button class="btn btn-secondary" style="margin-top: 0px; margin-left: 10px;">Поиск</button>
+            </form>
+            <div class="dropdown">
+                <button style="color:white" class="cat-drop-down btn dropdown-toggle"  id="dropdownMenuButton" data-toggle="modal" data-target="#exampleModal">
+                    HMI Продукты
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-body mobile-cat-field"></div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="product__filter">
+        <div class="produkt__filter__phone">
+            <div class="filter__carts active" onclick="toggleActive(this)">Фильтер1</div>
+            <div class="filter__carts" onclick="toggleActive(this)">Фильтер1</div>
+            <div class="filter__carts" onclick="toggleActive(this)">Фильтер1</div>
+            <div class="filter__carts" onclick="toggleActive(this)">Фильтер1</div>
+            <div class="filter__carts" onclick="toggleActive(this)">Фильтер1</div>
+        </div>
+    </div>
+
+
+    <!-- Catalog Start -->
+    <div class="container-fluid product-catalog catalog-container">
+        <div class="block-sidebar" id="cats_sidebar">
+            <h1 class="text-primary">Категории</h1>
+            <div class="sidebar-inner-block cat-field"></div>
+        </div>
+
+        <div class="block-content" id="main_blog">
+            <div class="holder" id="holder">
+              <div class="preloader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+            </div>
+            <div class="container py-5 inner-catalog-grid">
+
+                <div class="card product-card-appear product-button-appear active" data-bs-target="#productModal" style="width: 18rem;" data-bs-toggle="modal" style="width: 18rem">
+                    <img alt="Product Image" class="card-img-top" src="{% static 'website/img/project-3.jpg' %}">
+                    <div class="card-body">
+                        <h5 class="card-title">Product Name</h5>
+                    </div>
+                </div>
+                <div class="card" data-bs-target="#productModal" data-bs-toggle="modal" style="width: 18rem">
+                    <img alt="Product Image" class="card-img-top" src="{% static 'website/img/project-3.jpg' %}">
+                    <div class="card-body">
+                        <h5 class="card-title">Product Name</h5>
+                    </div>
+                </div>
+                <div class="card" data-bs-target="#productModal" data-bs-toggle="modal" style="width: 18rem">
+                    <img alt="Product Image" class="card-img-top" src="{% static 'website/img/project-3.jpg' %}">
+                    <div class="card-body">
+                        <h5 class="card-title">Product Name</h5>
+                    </div>
+                </div>
+                <div class="card" data-bs-target="#productModal" data-bs-toggle="modal" style="width: 18rem">
+                    <img alt="Product Image" class="card-img-top" src="{% static 'website/img/project-3.jpg' %}">
+                    <div class="card-body">
+                        <h5 class="card-title">Product Name</h5>
+                    </div>
+                </div>
+                <div class="card" data-bs-target="#productModal" data-bs-toggle="modal" style="width: 18rem">
+                    <img alt="Product Image" class="card-img-top" src="{% static 'website/img/project-3.jpg' %}">
+                    <div class="card-body">
+                        <h5 class="card-title">Product Name</h5>
+                    </div>
+                </div>
+                <div class="card" data-bs-target="#productModal" data-bs-toggle="modal" style="width: 18rem">
+                    <img alt="Product Image" class="card-img-top" src="{% static 'website/img/project-3.jpg' %}">
+                    <div class="card-body">
+                        <h5 class="card-title">Product Name</h5>
+                    </div>
+                </div>
+                <div class="card" data-bs-target="#productModal" data-bs-toggle="modal" style="width: 18rem">
+                    <img alt="Product Image" class="card-img-top" src="{% static 'website/img/project-3.jpg' %}">
+                    <div class="card-body">
+                        <h5 class="card-title">Product Name</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="block-sidebar" id="filters_sidebar">
+            <h1 class="text-primary">Фильтры</h1>
+            <div class="sidebar-inner-block cat-field subcats">
+                {% for subcat in subcats %}
+                <button class="buttons__filter" onclick="toggleActiveClass(this)">
+                    {{subcat.title}}
+                </button>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+        <script src="{% static 'website/js/testAI.js' %}"></script>
+<link rel="stylesheet" href="{% static 'website/css/product-preloader.css' %}">
+
+
+        <style>
+
+        .product-button-appear {
+            animation: buttonAppear 0.5s ease-in-out !important;
+        }
+
+        @keyframes buttonAppear {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+}
+        </style>
+    {% endblock main %}

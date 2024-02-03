@@ -1,0 +1,85 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block main %}
+            <!-- Модальное окно продукта -->
+ <div class="modal modal-flex" id="productModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-xl " role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productModalTitle">Название продукта</h5>
+                    <button type="button" class="close animated fadeIn" data-dismiss="modal" aria-label="Close"
+                            onclick="closeProductModal()">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <!-- Фотогалерея с использованием Owl Carousel и анимаций Animate.css -->
+                    <div class="inner-block owl-carousel owl-theme" id="productCarousel">
+                        <div class="item animated fadeIn"><img src="{% static 'website/img/project-3.jpg' %}"
+                                                               alt="Image 1"></div>
+                        <div class="item animated fadeIn"><img src="{% static 'website/img/project-2.jpg' %}"
+                                                               alt="Image 2"></div>
+                        <div class="item animated fadeIn"><img src="{% static 'website/img/project-1.jpg' %}"
+                                                               alt="Image 3"></div>
+                        <!-- Добавьте другие изображения по мере необходимости -->
+                    </div>
+                    <div class="inner-block description">
+                        <!-- Подробное описание продукта с анимацией -->
+                        <h5 class="text-primary">Краткое описание</h5>
+                        <p class="animated fadeIn" id="productDescription">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto atque cupiditate
+                            dolorum id nulla placeat quasi quibusdam rerum similique veniam.
+                        </p>
+
+
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <a href="" id="documentationLink" type="button" class="btn btn-secondary">Документация <i
+                                    class="fa-solid fa-file"></i></a>
+                    <button type="button" class="btn btn-danger" onclick="closeProductModal()">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+            <!--Product PopUp-->
+
+
+
+
+
+            <!-- Catalog Start -->
+            <div class="container-fluid catalog-container cumark">
+                <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
+                    <img src="{% static 'website/img/cumark_logo.png' %}" alt="">
+                </div>
+                <div class="block-content cumark">
+                    <div class="container py-2 inner-catalog-grid">
+                        {% for product in products %}
+                        <div class="card" data-bs-target="#productModal" data-bs-toggle="modal" data-card-id="{{ product.id }}">
+                            <img alt="Product Image" class="card-img-top" src="{{ product.get_first_photo }}">
+                            <div class="card-body">
+                                <h5 class="card-title">{{ product.title }}</h5>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            <!-- Catalog End -->
+
+    <style>
+    .owl-carousel .owl-item img {
+        display: block;
+        width: 100%;
+        aspect-ratio: 5/4;
+        object-fit: contain;
+    }
+    </style>
+
+<script src="{% static 'website/js/searchpage.js' %}"></script>
+{% endblock main %}

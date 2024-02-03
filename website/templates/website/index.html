@@ -1,0 +1,458 @@
+{% extends 'base.html' %}
+{% load static %}
+
+<div id="root">
+    {% load static %}
+
+
+    {% block main %}
+        <div class="carusel-index container-fluid px-0">
+        <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true"
+                    aria-label="First slide"></li>
+                <li data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Second slide"></li>
+                <li data-bs-target="#carouselId" data-bs-slide-to="2" aria-label="Third slide"></li>
+                <li data-bs-target="#carouselId" data-bs-slide-to="3" aria-label="Fourth slide"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active video">
+                    <video autoplay loop muted playsinline>
+                        <source src="{% static 'website/img/MainPoster/Poster_vidos.mp4' %}" type="video/mp4">
+                        <!-- Добавьте дополнительные исходные файлы видео для кросс-браузерной поддержки -->
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="carousel-caption">
+                        <div class="container carousel-content">
+                            <h6 class="text-secondary h4 animated fadeInUp">Vector Engineering</h6>
+                            <h1 class="text-white display-1 mb-4 animated fadeInLeft">Стратегии автоматизации — ваш путь
+                                к
+                                эффективности производства!</h1>
+                            <p class="mb-4 text-white fs-5 animated fadeInDown">Компания VEKTOR MUHANDISLIK
+                                специализирующейся на индустриальной автоматизации.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item product">
+                    <div class="carousel-caption">
+                        <div class="container carousel-content text-left">
+                            <div class="container">
+                                <img src="{% static 'website/img/MainPoster/poster-product.png' %}" alt="">
+                            </div>
+                            <div class="container">
+                                <h6 class="text-secondary h4 animated fadeInUp">CUMARK</h6>
+                                <p class="mb-4 text-white fs-5 animated fadeInDown">
+                                    Cumark —— Наша компания является официальным дистрибьютором CUMARK в
+                                    Узбекистане. Вы можете купить всю продукцию марки CUMARK в нашем магазине.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item product ps">
+                    <div class="carousel-caption">
+                        <div class="container carousel-content">
+                            <div class="container">
+                                <img src="{% static 'website/img/MainPoster/GMTProduct.png' %}" alt="">
+                            </div>
+                            <div class="container">
+                                <h6 class="text-secondary h4 animated fadeInUp">GMT</h6>
+                                <p class="mb-4 text-white fs-5 animated fadeInDown">
+                                    Наша компания является официальным дистрибьютором GMTCNT в Узбекистане. Вы можете купить всю продукцию марки GMTCNT в нашем магазине.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item remont-plat">
+                    <div class="carousel-caption">
+                        <div class="container carousel-content">
+                            <h1 class="text-white display-1 mb-4 animated fadeInLeft">Ремонт промышленной электроники</h1>
+                            <p class="mb-4 text-white fs-5 animated fadeInDown">
+                                Наша компания предоставляет профессиональные услуги
+                                по ремонту промышленной электроники.
+                                Мы ремонтируем продукцию всех ведущих мировых брендов.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="container-fluid py-4 partners-white">
+        <div class="partners-container partners-carusel owl-carousel ">
+            <img src="{% static 'website/img/partners/uzmetkombinat_bg.png' %}" alt="">
+            <img src="{% static 'website/img/partners/Uz-dong-Yang-Co_bg.webp' %}" alt="">
+            <img src="{% static 'website/img/partners/sayhun.webp' %}" alt="">
+            <img src="{% static 'website/img/partners/posco_international_textile_blue.webp' %}" alt="">
+            <img src="{% static 'website/img/partners/logo_ru.png' %}" alt="">
+            <img src="{% static 'website/img/partners/logo.svg' %}" alt="">
+            <img src="{% static 'website/img/partners/JazBattery.svg' %}" alt="">
+        </div>
+    </div>
+    <!--Partners End-->
+
+    <!-- Services Start -->
+    <div class="container-fluid services py-5 mb-5">
+        <div class="container-fluid services-inner-block">
+            <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
+                <h5 class="text-primary">Наши услуги</h5>
+                <h1>Мы предлагаем следующие услуги</h1>
+            </div>
+            <div class="row g-5 services-inner owl-carousel">
+                <div class="services-card col-md-6 col-lg-2 wow fadeIn" data-wow-delay=".3s">
+                    <div class="services-item bg-light">
+                        <div class="p-4 text-center services-content">
+                            <div class="services-content-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>
+                                    monitor-dashboard</title>
+                                    <path d="M21,16V4H3V16H21M21,2A2,2 0 0,1 23,4V16A2,2 0 0,1 21,18H14V20H16V22H8V20H10V18H3C1.89,18 1,17.1 1,16V4C1,2.89 1.89,2 3,2H21M5,6H14V11H5V6M15,6H19V8H15V6M19,9V14H15V9H19M5,12H9V14H5V12M10,12H14V14H10V12Z"/>
+                                </svg>
+                                <h4 class="mb-3">Проектирование и внедрение систем управления</h4>
+                                <p class="mb-4">
+                                    Мы разрабатываем индивидуальные решения для автоматизации производственных линий,
+                                    оборудования и машин, обеспечивая оптимальную эффективность и надежность.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="services-card col-md-6 col-lg-2 wow fadeIn" data-wow-delay=".5s">
+                    <div class="services-item bg-light">
+                        <div class="p-4 text-center services-content">
+                            <div class="services-content-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>microsoft</title>
+                                    <path d="M2,3H11V12H2V3M11,22H2V13H11V22M21,3V12H12V3H21M21,22H12V13H21V22Z"/>
+                                </svg>
+                                <h4 class="mb-3">Программное обеспечение PLC и SCADA</h4>
+                                <p class="mb-4">
+                                    Мы предоставляем программное обеспечение для программируемых логических контроллеров
+                                    (PLC) и систем контроля и сбора данных (SCADA), обеспечивая надежное управление и
+                                    мониторинг процессов.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="services-card col-md-6 col-lg-2 wow fadeIn" data-wow-delay=".7s">
+                    <div class="services-item bg-light">
+                        <div class="p-4 text-center services-content">
+                            <div class="services-content-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>package-check</title>
+                                    <path d="M6 3C5.5 3 5.1 3.2 4.8 3.6L3.5 5.2C3.2 5.6 3 6 3 6.5V19C3 20.1 3.9 21 5 21H13.3C13.1 20.4 13 19.7 13 19C13 15.7 15.7 13 19 13C19.7 13 20.4 13.1 21 13.3V6.5C21 6 20.8 5.6 20.5 5.2L19.1 3.5C18.9 3.2 18.5 3 18 3H6M5.9 4H17.9L18.8 5H5.1L5.9 4M6 15H12V18H6V15M21.3 15.8L17.7 19.4L16.1 17.8L15 19L17.8 22L22.6 17.2L21.3 15.8Z"/>
+                                </svg>
+                                <h4 class="mb-3">Поставка оборудования и компонентов</h4>
+                                <p class="mb-4">
+                                    Мы предлагаем широкий выбор электрических и электронных компонентов, а также
+                                    продуктов автоматизации от ведущих производителей.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="services-card col-md-6 col-lg-2 wow fadeIn" data-wow-delay=".3s">
+                    <div class="services-item bg-light">
+                        <div class="p-4 text-center services-content">
+                            <div class="services-content-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>
+                                    wrench-outline</title>
+                                    <path d="M22.61,19L13.53,9.91C14.46,7.57 14,4.81 12.09,2.91C9.79,0.61 6.21,0.4 3.66,2.26L7.5,6.11L6.08,7.5L2.25,3.69C0.39,6.23 0.6,9.82 2.9,12.11C4.76,13.97 7.47,14.46 9.79,13.59L18.9,22.7C19.29,23.09 19.92,23.09 20.31,22.7L22.61,20.4C23,20 23,19.39 22.61,19M19.61,20.59L10.15,11.13C9.54,11.58 8.86,11.85 8.15,11.95C6.79,12.15 5.36,11.74 4.32,10.7C3.37,9.76 2.93,8.5 3,7.26L6.09,10.35L10.33,6.11L7.24,3C8.5,2.95 9.73,3.39 10.68,4.33C11.76,5.41 12.17,6.9 11.92,8.29C11.8,9 11.5,9.66 11.04,10.25L20.5,19.7L19.61,20.59Z"/>
+                                </svg>
+                                <h4 class="mb-3">Техническое обслуживание и ремонт</h4>
+                                <p class="mb-4">
+                                    Мы предоставляем услуги по техническому обслуживанию и ремонту оборудования, включая
+                                    преобразователи частоты AC/DC и электронные платы.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="services-card col-md-6 col-lg-2 wow fadeIn" data-wow-delay=".5s">
+                    <div class="services-item bg-light">
+                        <div class="p-4 text-center services-content">
+                            <div class="services-content-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>face-agent</title>
+                                    <path d="M18.72,14.76C19.07,13.91 19.26,13 19.26,12C19.26,11.28 19.15,10.59 18.96,9.95C18.31,10.1 17.63,10.18 16.92,10.18C13.86,10.18 11.15,8.67 9.5,6.34C8.61,8.5 6.91,10.26 4.77,11.22C4.73,11.47 4.73,11.74 4.73,12A7.27,7.27 0 0,0 12,19.27C13.05,19.27 14.06,19.04 14.97,18.63C15.54,19.72 15.8,20.26 15.78,20.26C14.14,20.81 12.87,21.08 12,21.08C9.58,21.08 7.27,20.13 5.57,18.42C4.53,17.38 3.76,16.11 3.33,14.73H2V10.18H3.09C3.93,6.04 7.6,2.92 12,2.92C14.4,2.92 16.71,3.87 18.42,5.58C19.69,6.84 20.54,8.45 20.89,10.18H22V14.67H22V14.69L22,14.73H21.94L18.38,18L13.08,17.4V15.73H17.91L18.72,14.76M9.27,11.77C9.57,11.77 9.86,11.89 10.07,12.11C10.28,12.32 10.4,12.61 10.4,12.91C10.4,13.21 10.28,13.5 10.07,13.71C9.86,13.92 9.57,14.04 9.27,14.04C8.64,14.04 8.13,13.54 8.13,12.91C8.13,12.28 8.64,11.77 9.27,11.77M14.72,11.77C15.35,11.77 15.85,12.28 15.85,12.91C15.85,13.54 15.35,14.04 14.72,14.04C14.09,14.04 13.58,13.54 13.58,12.91A1.14,1.14 0 0,1 14.72,11.77Z"/>
+                                </svg>
+                                <h4 class="mb-3">
+                                    Консультационные услуги и обучение
+                                </h4>
+                                <p class="mb-4">
+                                    Мы проводим консультации по выбору оптимальных решений в области индустриальной
+                                    автоматизации и предлагаем обучающие программы для персонала.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Services End -->
+
+    <!-- About Start -->
+    <div class="container-fluid py-5 about_us_container">
+        <div class="container d-flex about_us_container-inner">
+            <div class="row about_us_text" id="bizHaqimizda">
+                <h1 class="section-title text-secondary text-center">O нас</h1>
+                <h1 class="section-sub-title text-primary__ob">
+                    О компании «VECTOR ENGINEERING»
+                </h1>
+                <div class="abut__row__text" data-wow-delay=".5s">
+                    <div class="text__abut">
+                        <p>
+                            Добро пожаловать в каталог нашей компании. Компания VEKTOR MUHANDISLIK специализирующейся на
+                            индустриальной автоматизации. Мы предлагаем широкий спектр инженерных услуг и решений для
+                            автоматизации производственных процессов в различных отраслях промышленности.
+                            Мы стремимся быть вашим надежным партнером в области индустриальной автоматизации,
+                            гарантируя качественное обслуживание и индивидуальный подход к каждому проекту. Свяжитесь с
+                            нами, чтобы узнать больше о том, как мы можем помочь оптимизировать ваши производственные
+                            процессы и повысить эффективность вашего предприятия.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row about_us_img">
+                <img src="{% static 'website/img/about_1.jpg' %}" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+    <!-- Services Double Start -->
+    <div class="container-fluid services-doubleblock py-5">
+        <div class="container services-inner-block">
+            <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
+                <h5 class="text-primary">Наши сервисы</h5>
+                <h1>Мы предлагаем следующие услуги</h1>
+            </div>
+            <div class="row g-5 services-inner-db">
+                <div class="col-md-6 col-lg-2 wow fadeIn" data-wow-delay=".3s">
+                    <div class="services-item bg-light">
+                        <div class="p-4 text-center services-content">
+                            <div class="services-content-icon">
+                                <img src="{% static 'website/img/service1.jpg' %}" alt="">
+                                <h4 class="mb-3">Наши работы по автоматизации:</h4>
+                                <ul>
+                                    <li>Различные текстильные машины</li>
+                                    <li>паровые котлы</li>
+                                    <li>покрасочные котлы</li>
+                                    <li>Различные упаковочные машины, линии паллетирования</li>
+                                    <li>Линии дозирования</li>
+                                    <li>Различные промышленные печи</li>
+                                    <li>Линии и машины для производства муки</li>
+                                    <li>Машины для переработки</li>
+                                    <li>прессовые машины</li>
+                                    <li>конвейерные линии</li>
+                                    <li>Различная автоматизация насосов</li>
+                                    <li>оборудование для производства бумаги</li>
+                                    <li>Применение кранов</li>
+                                    <li>термопласт</li>
+                                    <li>металлургия</li>
+                                    <li>различные линии по производству продуктов питания</li>
+                                    <li>лифт</li>
+                                    <li>Системы капельного орошения</li>
+                                    <li>теплица</li>
+                                    <li>станки с ЧПУ</li>
+                                    <li>Системы энергомониторинга</li>
+                                    <li>Сборка электрического щита</li>
+                                    <li>Инженерные услуги</li>
+                                    <li>Программное обеспечение SCADA</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-2 wow fadeIn" data-wow-delay=".5s">
+                    <div class="services-item bg-light">
+                        <div class="p-4 text-center services-content">
+                            <div class="services-content-icon">
+                                <img src="{% static 'website/img/service2.jpg' %}" alt="">
+                                <h4 class="mb-3">Техническое обслуживание, сервисные услуги и ремонт:</h4>
+                                <ul>
+                                    <li>преобразователи частоты</li>
+                                    <li>сервоприводы</li>
+                                    <li>Различные электронные платы</li>
+                                    <li>устройства плавного пуска</li>
+                                    <li>Источник бесперебойного питания/UPS</li>
+                                    <li>генераторы</li>
+                                    <li>сварочные аппараты</li>
+                                    <li>Различные ультразвуковые устройства</li>
+                                    <li>Лабораторное оборудование</li>
+                                    <li>Различные медицинские устройства</li>
+                                    <li>Компрессоры</li>
+                                    <li>Различные ПЛК и модули</li>
+                                    <li>Сенсорные панели оператора</li>
+                                    <li>электромагнитные клапаны</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Services Double End -->
+
+    <!-- About Our services Start -->
+    <div class="container-fluid about-services py-3">
+        <div class="container pt-5">
+            <div class="row g-5">
+                <div class="col-lg-5 col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".3s">
+                    <div class="h-100 position-relative">
+                        <img src="{% static 'website/img/OperatorPanel.webp' %}" class="img-fluid w-75 rounded" alt=""
+                             style="margin-bottom: 25%;">
+                        <div class="position-absolute w-75" style="top: 25%; left: 25%;">
+                            <!--                                    <img src="img/MiniPlcDisp.webp" class="img-fluid w-100 rounded" alt="">-->
+                        </div>
+                    </div>
+                </div>
+                <div class="text-right col-lg-7 col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".5s">
+                    <h5 class="text-primary">Интерфейсы</h5>
+                    <h1 class="mb-4">Мини ПЛК с дисплеем</h1>
+                    <p>
+                        Наши мини-ПЛК предоставляют надежное и эффективное управление автоматизированными системами,
+                        обеспечивая исключительную гибкость и простоту в использовании.
+
+                        Современные технологии, сочетающиеся с компактным дизайном и интуитивным дисплеем, делают наши
+                        продукты оптимальным выбором для самых разнообразных сценариев. Независимо от того, решается ли
+                        маломасштабная промышленная задача или ведется проект среднего масштаба, наши мини-ПЛК
+                        предназначены для успешного удовлетворения различных потребностей в автоматизации.
+
+                        С фокусом на инновационных решениях, наша линейка мини-ПЛК обеспечивает не только надежность и
+                        эффективность, но и создает комфортное и эффективное взаимодействие с автоматизированными
+                        системами, открывая новые горизонты в области технологического прогресса..
+                    </p>
+                </div>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-7 col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".5s">
+                    <h5 class="text-primary">Преобразователи</h5>
+                    <h1 class="mb-4">Преобразователь частоты ES580 серии</h1>
+                    <p>
+                        • Высокая надежность;<br>
+                        • Высокое удобство использования;<br>
+                        • Совместим с приводом синхронного двигателя с постоянными магнитами и трехфазным асинхронным
+                        двигателем;<br>
+                        • Интеллектуальная LCD-дисплей входит в стандартную конфигурацию;<br>
+                        • Модульная компактная конструкция.<br>
+                        220V 0.4-2.2 kW<br>
+                        380V 0.75-560 kW<br>
+                    </p>
+                </div>
+                <div class="col-lg-5 col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".3s">
+                    <div class="h-100 position-relative">
+                        <img src="{% static 'website/img/cumark.png' %}" class="img-fluid w-75 rounded" alt=""
+                             style="margin-bottom: 25%;">
+                        <div class="position-absolute w-75" style="top: 25%; left: 25%;">
+                            <!--                                    <img src="img/cumark.png" class="img-fluid w-100 rounded" alt="">-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-5 col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".3s">
+                    <div class="h-100 position-relative">
+                        <img src="{% static 'website/img/MiniPlcDisp.webp' %}" class="img-fluid w-75 rounded" alt=""
+                             style="margin-bottom: 25%;">
+                        <div class="position-absolute w-75" style="top: 25%; left: 25%;">
+                            <!--                                    <img src="img/about-2.jpg" class="img-fluid w-100 rounded" alt="">-->
+                        </div>
+                    </div>
+                </div>
+                <div class="text-right col-lg-7 col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".5s">
+                    <h5 class="text-primary">Панели</h5>
+                    <h1 class="mb-4">ПАНЕЛИ ОПЕРАТОРА</h1>
+                    <p>
+                        Панели оператора серии TSG представляют собой выдающееся решение для ваших потребностей в
+                        управлении и визуализации процессов. Они обеспечивают высочайшее качество изображения благодаря
+                        внушительной глубине цвета в 16,77 миллиона оттенков.
+
+                        Эти панели обладают передней панелью, удовлетворяющей стандарту IP65, что обеспечивает надежную
+                        защиту от воздействия внешней среды и сохраняет функциональность в различных условиях
+                        эксплуатации. Наша продукция оснащена функцией защиты, обеспечивая долгий срок службы и
+                        стабильную работу.
+
+                        HMI серии TSG также предоставляют коммуникационные порты, включая 1 порт RS232 и 1 порт, который
+                        поддерживает на выбор RS232, RS485 или RS422. Это обеспечивает гибкость в подключении к
+                        различным устройствам и системам, сделав ваш опыт в управлении более удобным и эффективным.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+    <!--Partners Start-->
+    <div class="container-fluid py-5 mb-5 partners">
+        <div class="container-fluid">
+            <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
+                <h5 class="text-primary">Бренды, продукцию которых мы ремонтируем</h5>
+            </div>
+            <div class="partners-container partners-cont owl-carousel ">
+                <img src="{% static 'website/img/compnies/ABB.png' %}" alt="Image">
+                <img src="{% static 'website/img/compnies/AEG.png' %}" alt="Image">
+                <img src="{% static 'website/img/compnies/allen-bradley-vector-logo.png' %}" alt="Image">
+                <img src="{% static 'website/img/compnies/Baumuller_Logo.png' %}" alt="Image">
+                <img src="{% static 'website/img/compnies/Beckhoff.png' %}" alt="Image">
+                <img src="{% static 'website/img/compnies/big dutchman.png' %}" alt="Image">
+                <img src="{% static 'website/img/compnies/Bonfiglioli.png' %}" alt="Image">
+                <img src="{% static 'website/img/compnies/Cumark1.png' %}" alt="Image">
+                <img src="{% static 'website/img/compnies/Danfoss.png' %}" alt="Image">
+                <img src="{% static 'website/img/compnies/Delta.png' %}" alt="Image">
+                <img src="{% static 'website/img/compnies/eliarkurumsal.png' %}" alt="Image">
+                <img src="{% static 'website/img/compnies/Emerson.png' %}" alt="Image">
+                <img src="{% static 'website/img/compnies/FANUC-logo.png' %}" alt="Image">
+                <img src="{% static 'website/img/compnies/Fuji electric.png' %}" alt="Image">
+                <img src="{% static 'website/img/compnies/GMT.png' %}" alt="Image">
+                <img src="{% static 'website/img/compnies/Hitachi-Logo.png' %}" alt="Image">
+                <img src="{% static 'website/img/compnies/invt.png' %}" alt="Image">
+                <img src="{% static 'website/img/compnies/KEB-Logo.svg.png' %}" alt="Image">
+                <img src="{% static 'website/img/compnies/Lenze.png' %}" alt="Image">
+                <img src="{% static 'website/img/compnies/logo-picanol-ev.png' %}" alt="Image">
+                <img src="{% static 'website/img/compnies/logo_control_techniques.png' %}" alt="Image">
+                <img src="{% static 'website/img/compnies/Logo_Uster.svg.png' %}" alt="Image">
+                <img src="{% static 'website/img/compnies/LS.png' %}" alt="Image">
+                <img src="{% static 'website/img/compnies/Marzoli1.png' %}" alt="Image">
+                <img src="{% static 'website/img/compnies/Mitsubishi.png' %}" alt="Image">
+                <img src="{% static 'website/img/compnies/Nidec.png' %}" alt="Image">
+                <img src="{% static 'website/img/compnies/Omron.png' %}" alt="Image">
+                <img src="{% static 'website/img/compnies/panasonic-vector-logo.png' %}" alt="Image">
+                <img src="{% static 'website/img/compnies/Parker.png' %}" alt="Image">
+                <img src="{% static 'website/img/compnies/Rieter1.png' %}" alt="Image">
+                <img src="{% static 'website/img/compnies/Rockwell.png' %}" alt="Image">
+                <img src="{% static 'website/img/compnies/Savio.png' %}" alt="Image">
+                <img src="{% static 'website/img/compnies/Schlafhorst.png' %}" alt="Image">
+                <img src="{% static 'website/img/compnies/Schneider.png' %}" alt="Image">
+                <img src="{% static 'website/img/compnies/SEW_LOGO.svg.png' %}" alt="Image">
+                <img src="{% static 'website/img/compnies/Siemens.png' %}" alt="Image">
+                <img src="{% static 'website/img/compnies/Tde Macno.png' %}" alt="Image">
+                <img src="{% static 'website/img/compnies/Teco.png' %}" alt="Image">
+                <img src="{% static 'website/img/compnies/Toshiba.png' %}" alt="Image">
+                <img src="{% static 'website/img/compnies/Trutzschler_Logo.svg.png' %}" alt="Image">
+                <img src="{% static 'website/img/compnies/Vacon.png' %}" alt="Image">
+                <img src="{% static 'website/img/compnies/Yaskawa1.png' %}" alt="Image">
+            </div>
+        </div>
+    </div>
+    {% endblock main %}
+
+    <!-- Footer End -->
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-secondary btn-square rounded-circle back-to-top"><i
+            class="fa fa-arrow-up text-white"></i></a>
+</div>
+
+</body>
+
+</html>
